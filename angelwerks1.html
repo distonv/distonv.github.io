@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>
+Angelwerks
+</title>
+
+<script language="Javascript">
+function openNewWindow(url)
+{
+	//height of window
+	var height = 741;
+
+	//width of window
+	var width = 909;
+
+	//position of window from left edge of screen
+	//can define as below, or as a fraction
+	//of the screen size
+	//e.g.
+	//var left = window.screen.width/2;
+	var left = 10;
+
+	//position of window from top edge of screen
+	//can define as below, or as a fraction
+	//of the screen size
+	//e.g.
+	//var top = window.screen.height/2;
+	var top = 30;
+
+	var feature = "height=" + height + ",width=" + width + ",top=" + top + ",left=" + left
+	                          + ",status=no,toolbar=no,menubar=no,location=no,scrollbars=yes";
+
+    //display the window
+    window.open(url, "newWindow", feature);
+}
+openNewWindow('angelwerks.html')
+self.resizeTo(800,685)
+self.moveTo(70,70)
+window.opener="test"
+window.close()
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
